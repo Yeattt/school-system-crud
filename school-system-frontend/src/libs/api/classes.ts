@@ -14,7 +14,16 @@ export const getOneClass = async (id: number): Promise<IClass> => {
 };
 
 export const createClass = async (classData: INewClass): Promise<IClass> => {
-  const { data } = await schoolSystemApi.post(`classes`, classData);
+  let classDataToSend: INewClass = classData;
+  
+  if (classData.teacher?.toString().trim() == '' || classData.teacher == undefined || classData.teacher == null) {
+    classDataToSend = {
+      name: classData.name,
+      description: classData.description,
+    };
+  };
+
+  const { data } = await schoolSystemApi.post(`classes`, classDataToSend);
 
   return data;
 };

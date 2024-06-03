@@ -30,7 +30,7 @@ export class Class {
   public updatedAt: Date;
 
   //* ---- RELATIONS ---- *//
-  @ManyToOne(() => Teacher, (teacher) => teacher.classes, { nullable: false, onDelete: 'CASCADE' })
+  @ManyToOne(() => Teacher, (teacher) => teacher.classes, { onDelete: 'CASCADE' })
   public teacher: Teacher;
 
   @ManyToMany(() => Student, (student) => student.classes)

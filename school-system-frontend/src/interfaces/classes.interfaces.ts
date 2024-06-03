@@ -18,8 +18,8 @@ export interface IClass {
 export interface INewClass {
   name: string;
   description: string;
-  teacher: number;
-  students: number[];
+  teacher?: number;
+  students?: number[];
 };
 
 export interface IUpdateClass {

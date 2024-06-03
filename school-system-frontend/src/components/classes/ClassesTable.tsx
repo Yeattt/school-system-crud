@@ -38,8 +38,8 @@ export const ClassesTable: FC = () => {
         idToShow: +index + 1,
         name: iclass.name,
         description: iclass.description,
-        teacherId: iclass.teacher.id,
-        teacherName: iclass.teacher.name,
+        teacherId: iclass?.teacher?.id,
+        teacherName: iclass?.teacher?.name || 'No hay profesor',
       };
     });
 
