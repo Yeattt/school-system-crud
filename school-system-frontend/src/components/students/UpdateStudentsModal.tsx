@@ -23,8 +23,8 @@ export const UpdateStudentsModal: FC = () => {
   useEffect(() => {
     if (payload?.data !== null) {
       setValue('name', payload?.data.name);
-      setValue('lastname', payload?.data.description);
-      setValue('email', payload?.data.teacher);
+      setValue('lastname', payload?.data.lastname);
+      setValue('email', payload?.data.email);
     }
   }, [payload?.data, setValue]);
 
