@@ -91,8 +91,8 @@ export class ClassesService {
         'teacher',
         'students',
       ],
-      skip: (page - 1) * limit,
-      take: limit,
+      // skip: (page - 1) * limit,
+      // take: limit,
     });
 
     return {

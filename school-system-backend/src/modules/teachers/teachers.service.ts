@@ -53,8 +53,8 @@ export class TeachersService {
       where: {
         isActive: true,
       },
-      skip: (page - 1) * limit,
-      take: limit,
+      // skip: (page - 1) * limit,
+      // take: limit,
     });
 
     return {
