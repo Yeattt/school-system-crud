@@ -1,6 +1,9 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { ManageStudentsModal } from '../../components/classes/ManageStudentsModal';
 
+
+//* ACÁ ESTOY HACIENDO LA CONFIGURACIÓN PARA MI MANEJO DEL ESTADO GLOBAL DE LOS MODALS
+
 interface ModalState {
   createModal: {
     isOpen: boolean;

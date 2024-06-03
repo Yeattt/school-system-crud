@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+//* ACÁ ESTOY HACIENDO LA CONFIGURACIÓN PARA MI MANEJO DEL ESTADO GLOBAL DE LAS ALERTAS
+
 interface AlertState {
   successAlert: {
     isOpen: boolean;

@@ -1,6 +1,8 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 
+//* ACÁ HAGO LA CONFIGURACIÓN PARA LOS ESTILOS O TEMAS GLOBALES DE MI APLICACIÓN
+
 export const theme = createTheme({
   palette: {
     primary: {
