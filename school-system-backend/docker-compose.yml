@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  school-db:
+    container_name: school_db
+    image: mysql:8.0
+    restart: always
+    volumes:
+      - ./mysql:/var/lib/mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=school-db
+      - MYSQL_PASSWORD=123456

@@ -1,0 +1,5 @@
+school-system-backend/node_modules/
+school-system-backend/dist/
+school-system-backend/mysql/
+
+school-system-frontend/node_modules/
