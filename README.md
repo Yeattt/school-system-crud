@@ -1,5 +1,4 @@
 # 🏫 - School System Backend
-Repositorio del API para la prueba técnica.
 
 School System Backend es un sistema que permite el manejo de los datos para un colegio, donde principalmente se hace la administración de profesores, clases y estudiantes.
 
